@@ -1,4 +1,4 @@
-# Перед отдельной Git-публикацией
+# Перед следующей Git-публикацией или release
 
 - Kamil выбирает лицензию и утверждает LICENSE/атрибуцию. Сейчас решение не принято.
 - Прочитать SECURITY.md и ограничения; не заявлять production-ready.
@@ -6,7 +6,7 @@
 - Проверить EXPORT-MANIFEST.json: это полный список candidate files, не runtime.
 - Не копировать .env, ключи, .controlled-agent, logs, SQLite, raw, caches или данные исходного проекта.
 - Если менялись файлы, пересобрать manifest командой python -B scripts/build_export.py.
-- Только после отдельного разрешения создать Git repository/remote, commit, push.
+- Выполнять следующие commit/push/release только после явного разрешения владельца.
 - В POSIX сделать agent.sh executable для прямого ./agent.sh; sh agent.sh работает без executable bit.
 - GitHub Actions требует сети у GitHub runners; локальная сборка Actions не запускала.
 - Live probes — отдельное разрешение и бюджет; даже успех не означает human acceptance.

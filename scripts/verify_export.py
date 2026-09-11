@@ -29,9 +29,11 @@ def inventory(root):
     for path in sorted(root.rglob("*")):
         rel = path.relative_to(root).as_posix()
         parts = [p.casefold() for p in path.relative_to(root).parts]
+        if ".git" in parts:
+            continue  # repository metadata is neither distributed nor hashed
         if path.is_symlink() or getattr(path.lstat(), "st_file_attributes", 0) & 0x400:
             raise ValueError("export contains link/reparse point: " + rel)
-        if any(p.startswith(".env") or p in {".git", ".ai", ".controlled-agent", "__pycache__", "sources", "context", "raw", "logs", "node_modules", "dist", "build"} for p in parts):
+        if any(p.startswith(".env") or p in {".ai", ".controlled-agent", "__pycache__", "sources", "context", "raw", "logs", "node_modules", "dist", "build"} for p in parts):
             raise ValueError("forbidden export path: " + rel)
         if path.suffix.casefold() in {".pyc", ".pyo", ".log", ".jsonl", ".sqlite", ".sqlite3", ".db", ".blob", ".pem", ".key", ".whl"}:
             raise ValueError("forbidden export artifact: " + rel)

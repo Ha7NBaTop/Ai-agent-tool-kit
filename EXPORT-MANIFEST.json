@@ -13,8 +13,8 @@
       "sha256": "5e997b75a563475e9737d4eca238439f038c3cdc3ddd193a2b8ea8bb0ad47e61"
     },
     "CHANGELOG.md": {
-      "bytes": 380,
-      "sha256": "701f2cefcfa8ddf277c86e423536a242eb0004fc94c7068583fdeefaa4629ca7"
+      "bytes": 396,
+      "sha256": "f730f2a0e137c2bff79b01fd47fd8fc249336fdd38a5737fa29555129adc128c"
     },
     "CONTRIBUTING.md": {
       "bytes": 794,
@@ -25,12 +25,12 @@
       "sha256": "f434647aa6be47c3e55b17a6bc17a79d244d500aec60ecdccf188297ce0305b1"
     },
     "README.md": {
-      "bytes": 2417,
-      "sha256": "b49e0013791832f141a69dd1a2d1b50fe4704fffb3c16188221394bc1309b78a"
+      "bytes": 2411,
+      "sha256": "04b1841a8046000b88768a361fbeee5ccab02964cb57a043eab21107cb60586b"
     },
     "README_RU.md": {
-      "bytes": 2409,
-      "sha256": "04334867a0cd1feb7a09fcaeac5e2c98d809fc29ed26915aa219e80a6c8eecdc"
+      "bytes": 2419,
+      "sha256": "0beda42abd4086a6cdc07dab9ba5d0b5596554aa1b429b838a38e54a4e049820"
     },
     "SECURITY.md": {
       "bytes": 2015,
@@ -141,16 +141,16 @@
       "sha256": "b44fa123f68a0d8e9ff9e3d97bb2ff8722015859c2be730e41d282a53f672e86"
     },
     "docs/BUILD_REPORT.md": {
-      "bytes": 5332,
-      "sha256": "be34105cd5bdfeb9e2fd1b8be22dbead1434f8310a4c779fcda4161758466905"
+      "bytes": 5355,
+      "sha256": "863437a5602a3b9e7cd5e9ea054f4a256ac16b232aee8768fa8fd46275c2d63c"
     },
     "docs/QUICKSTART_RU.md": {
       "bytes": 3225,
       "sha256": "5af7b16a30d0fca8a4acd71db6425fe2f5e37fee8aba112450bd8b0ed77dc920"
     },
     "docs/RELEASE_CHECKLIST_RU.md": {
-      "bytes": 1442,
-      "sha256": "839ba372053bac6d230d8871ec08ed113d6a708001ca1a1aae227ce1ce66a99c"
+      "bytes": 1475,
+      "sha256": "8f2fc296d81c3616355d6f61876062dc5096b4d15ab63bb9645d94f275c9a79a"
     },
     "docs/THREAT_MODEL.md": {
       "bytes": 1854,
@@ -209,8 +209,8 @@
       "sha256": "4c290d382dc7f4a1ff94550b397773f48f0ab44b60b37ba9b970bd61bdf32804"
     },
     "scripts/verify_export.py": {
-      "bytes": 3802,
-      "sha256": "757188a7a468a28290532778939a6c99ee1bf21a7d74deeaca93dcaa32223ead"
+      "bytes": 3900,
+      "sha256": "eef8b6d8600fb956c38363479d7c47789870bff675c3b5bc412865df9a39e37d"
     },
     "scripts/wheel_backend.py": {
       "bytes": 2141,

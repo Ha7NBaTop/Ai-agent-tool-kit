@@ -30,4 +30,4 @@ Demo работает без ключа и сети, во временной п�
 [публикация](docs/RELEASE_CHECKLIST_RU.md), [отчёт](docs/BUILD_REPORT.md).
 
 Лицензию выбирает Kamil; до решения открытая лицензия не предоставлена.
-Git, публикация и human acceptance автоматически не выполняются.
+Standalone toolkit размещён в GitHub; package/release и human acceptance не выполнялись.

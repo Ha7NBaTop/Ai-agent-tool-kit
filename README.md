@@ -37,4 +37,4 @@ an independently sandboxed executor and is deferred.
 
 Optional packaging: a stdlib PEP 517 wheel backend is included; no runtime third-party dependencies.
 A pre-existing pip can optionally install with `python -m pip install --no-build-isolation --no-deps .`.
-No installation or publication was performed as part of this build. Source launch is the primary path.
+No installation or package/release publication was performed. Source launch is the primary path.

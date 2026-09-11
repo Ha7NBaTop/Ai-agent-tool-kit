@@ -1,6 +1,6 @@
 # Отчёт локальной сборки — 2026-09-11
 
-READY_FOR_API_PROBE / NOT_PUBLISHED / NOT_ACCEPTED. Live calls: 0.
+READY_FOR_API_PROBE / GIT_PUSHED / NOT_RELEASED / NOT_ACCEPTED. Live calls: 0.
 Sol/Astra: ACCESS_UNKNOWN. Независимый реальный critical review: NOT_RUN.
 
 Среда: Windows, Python 3.14.7, стандартная библиотека, без dependency installation.
@@ -27,7 +27,7 @@ Sol/Astra: ACCESS_UNKNOWN. Независимый реальный critical revi
 - Optional wheel дважды собран в test temporary directory с одинаковыми bytes;
   после распаковки demo: PASS. pip install не выполнялся.
 - Исходный родительский проект и пользовательские файлы не изменялись.
-- Git repository отсутствует; git init/commit/push, acceptance и публикация не выполнялись.
+- Standalone toolkit опубликован как Git-репозиторий; package/release и acceptance не выполнялись.
 
 ## Что реализовано
 

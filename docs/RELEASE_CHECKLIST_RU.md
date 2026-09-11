@@ -1,6 +1,6 @@
 # Перед следующей Git-публикацией или release
 
-- Kamil выбирает лицензию и утверждает LICENSE/атрибуцию. Сейчас решение не принято.
+- Убедиться, что LICENSE содержит утверждённую Kamil лицензию MIT и корректную атрибуцию.
 - Прочитать SECURITY.md и ограничения; не заявлять production-ready.
 - Повторить tests, demo и export verification в чистой временной копии.
 - Проверить EXPORT-MANIFEST.json: это полный список candidate files, не runtime.

@@ -11,13 +11,13 @@ Sol/Astra: ACCESS_UNKNOWN. Независимый реальный critical revi
 ## Проверки
 
 - Из корня исходного проекта: `python -m unittest discover -s standalone/controlled-ai-agent-toolkit/tests -v`.
-  57 tests, 56 passed, 1 skipped, 0 failures/errors.
+  58 tests, 57 passed, 1 skipped, 0 failures/errors.
 - Focused: `python -B -m unittest discover -s standalone/controlled-ai-agent-toolkit/tests -k crash -v`.
   3 tests, 3 passed, 0 skipped/failures/errors.
 - Пропуск: создание symlink запрещено правами Windows. Отдельный junction escape test прошёл.
 - Fake demo: PASS, READY_FOR_HUMAN / FAKE_REVIEW_ONLY, 4 fake calls, 2 tool calls, idempotent resume.
 - В новой временной standalone-копии: `python -m unittest discover -s tests -v`:
-  57 tests, 56 passed, 1 skipped, 0 failures/errors.
+  58 tests, 57 passed, 1 skipped, 0 failures/errors.
 - В той же копии `python -m controlled_agent.cli demo`, doctor, task validate и plan: PASS.
 - `cmd /d /c agent.cmd demo` в копии с пробелами в пути: PASS.
   PowerShell launcher заблокирован execution policy этой машины (отдельно от unittest skip).
@@ -56,6 +56,6 @@ Fake provider обслуживает synthetic greeting example. Live compatibil
 Сам manifest исключён из собственного inventory; его SHA-256 сообщается verify_export.py.
 Отчёт не содержит runtime packets, ключей или данных исходного проекта.
 
-Решение Kamil: выбрать MIT / Apache-2.0 / proprietary и отдельно разрешить либо отложить
-два synthetic probes с лимитом один request и 256 output tokens на каждый, включая reasoning.
+Kamil выбрал лицензию MIT. Остаётся отдельно разрешить либо отложить два synthetic probes
+с лимитом один request и 256 output tokens на каждый, включая reasoning.
 Ключ не передавать в чат. Денежный бюджет и лимиты API project согласовать отдельно.

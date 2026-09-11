@@ -628,6 +628,10 @@ class ToolkitTest(unittest.TestCase):
                 inventory(destination)
             path.rmdir()
 
+    def test_54_repository_checkout_keeps_lf(self):
+        self.assertEqual((ROOT / ".gitattributes").read_text(encoding="utf-8"), "* text=auto eol=lf\n")
+        self.assertEqual((ROOT / "examples/hello-safe-edit/expected/hello.txt").read_bytes(), b"Hello, controlled agent!\n")
+
 
 if __name__ == "__main__":
     unittest.main()

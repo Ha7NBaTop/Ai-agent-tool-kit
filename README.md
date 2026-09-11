@@ -5,7 +5,7 @@ It offers bounded file editing through Responses API custom functions, a determi
 sequential writer, checks, immutable review packet, read-only reviewer and a separate owner decision.
 
 Build status: see [BUILD_REPORT.md](docs/BUILD_REPORT.md). Live model access remains ACCESS_UNKNOWN.
-This is not a production security boundary. License is not yet granted: see LICENSE-CHOICE.md.
+This is not a production security boundary. Licensed under the MIT License; see LICENSE.
 
 From this directory:
 

@@ -1,6 +1,6 @@
 # Contributing
 
-License decision is pending; coordinate reuse/contributions with the owner first.
+The project is MIT licensed. Contributions must be compatible with that license.
 Use synthetic fixtures and temporary directories, standard library, and Python 3.11+.
 Keep fake/live evidence separate, preserve no-fallback routing, and do not weaken guards to make tests pass.
 Changes to tool semantics require negative tests, crash/replay tests and threat-model updates.

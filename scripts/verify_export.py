@@ -8,7 +8,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = "EXPORT-MANIFEST.json"
 MODULES = "__init__ cli contracts config router permissions path_guard tools tool_loop openai_provider fake_provider orchestrator state_store ledger manifests redaction budget check_runner".split()
-REQUIRED = set("AGENTS.md README.md README_RU.md SECURITY.md CONTRIBUTING.md CHANGELOG.md LICENSE-CHOICE.md pyproject.toml .gitignore agent.ps1 agent.sh".split())
+REQUIRED = set("AGENTS.md README.md README_RU.md SECURITY.md CONTRIBUTING.md CHANGELOG.md LICENSE pyproject.toml .gitattributes .gitignore agent.ps1 agent.sh".split())
 REQUIRED.update("controlled_agent/" + m + ".py" for m in MODULES)
 REQUIRED.update("config/" + m + ".json" for m in ("models", "permissions", "budgets"))
 REQUIRED.update("schemas/" + m + ".schema.json" for m in ("task", "worker_result", "reviewer_result", "run_manifest"))

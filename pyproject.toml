@@ -9,6 +9,7 @@ version = "0.1.0"
 description = "Offline-first sequential writer/reviewer orchestration with bounded local tools"
 requires-python = ">=3.11"
 dependencies = []
+license = {file = "LICENSE"}
 
 [project.scripts]
 controlled-agent = "controlled_agent.cli:main"

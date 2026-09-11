@@ -20,7 +20,8 @@ def build_wheel(wheel_directory, config_settings=None, metadata_directory=None):
         for p in sorted((ROOT / folder).rglob("*")):
             if p.is_file() and not any(part in {".controlled-agent", "output", "__pycache__"} for part in p.parts):
                 files["controlled_agent/_resources/" + p.relative_to(ROOT).as_posix()] = p.read_bytes()
-    files[DIST + "/METADATA"] = b"Metadata-Version: 2.1\nName: controlled-ai-agent-toolkit\nVersion: 0.1.0\nRequires-Python: >=3.11\n\nLicense choice pending owner decision.\n"
+    files[DIST + "/METADATA"] = b"Metadata-Version: 2.4\nName: controlled-ai-agent-toolkit\nVersion: 0.1.0\nRequires-Python: >=3.11\nLicense-Expression: MIT\nLicense-File: licenses/LICENSE\n\n"
+    files[DIST + "/licenses/LICENSE"] = (ROOT / "LICENSE").read_bytes()
     files[DIST + "/WHEEL"] = b"Wheel-Version: 1.0\nGenerator: controlled-agent-stdlib\nRoot-Is-Purelib: true\nTag: py3-none-any\n"
     files[DIST + "/entry_points.txt"] = b"[console_scripts]\ncontrolled-agent = controlled_agent.cli:main\n"
     record = io.StringIO(newline="")

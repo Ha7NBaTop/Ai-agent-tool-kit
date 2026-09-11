@@ -29,5 +29,5 @@ Demo работает без ключа и сети, во временной п�
 [архитектура](docs/ARCHITECTURE.md), [модель угроз](docs/THREAT_MODEL.md),
 [публикация](docs/RELEASE_CHECKLIST_RU.md), [отчёт](docs/BUILD_REPORT.md).
 
-Лицензию выбирает Kamil; до решения открытая лицензия не предоставлена.
+Проект распространяется по лицензии MIT; полный текст находится в LICENSE.
 Standalone toolkit размещён в GitHub; package/release и human acceptance не выполнялись.

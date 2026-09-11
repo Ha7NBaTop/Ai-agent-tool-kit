@@ -1,0 +1,23 @@
+name: offline-tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  offline:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.14']
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      CONTROLLED_AGENT_LIVE_ENABLED: '0'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -B -m unittest discover -s tests -v
+      - run: python -B -m controlled_agent.cli demo
+      - name: Verify candidate export (Git metadata excluded in disposable copy)
+        run: python -B scripts/ci_verify.py

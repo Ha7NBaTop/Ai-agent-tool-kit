@@ -1,0 +1,8 @@
+# Changelog
+
+## 0.1.0 — unreleased
+
+Initial independent toolkit: guarded tools, stdlib Responses transport, deterministic fake lifecycle,
+write-ahead recovery, strict routes, capped approval-gated probes, frozen packets/manifests,
+portable launchers, offline regressions and export verification.
+No live validation, publication, production-readiness or owner acceptance claims.

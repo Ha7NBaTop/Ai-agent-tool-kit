@@ -1,0 +1,1 @@
+{"version":"1.0.0","input_tokens":250000,"output_tokens":16000,"model_calls":16,"tool_calls":40,"repair_cycles":1,"wall_seconds":900,"per_call_output_tokens":4096}

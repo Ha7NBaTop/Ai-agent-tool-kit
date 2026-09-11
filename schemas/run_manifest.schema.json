@@ -1,0 +1,80 @@
+{
+  "type": "object",
+  "properties": {
+    "budget_limits": {"type": "object"},
+    "version": {
+      "type": "string"
+    },
+    "task_hash": {
+      "type": "string"
+    },
+    "base_revision": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "resources": {
+      "type": "object"
+    },
+    "input_hashes": {
+      "type": "object"
+    },
+    "output_hashes": {
+      "type": "object"
+    },
+    "calls": {
+      "type": "array"
+    },
+    "tool_operations": {
+      "type": "object"
+    },
+    "checks": {
+      "type": "array"
+    },
+    "usage": {
+      "type": "object"
+    },
+    "review_packet_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "review": {
+      "type": "object"
+    },
+    "status": {
+      "type": "string"
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "human_decision": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "budget_limits",
+    "version",
+    "task_hash",
+    "base_revision",
+    "mode",
+    "resources",
+    "input_hashes",
+    "output_hashes",
+    "calls",
+    "tool_operations",
+    "checks",
+    "usage",
+    "review_packet_refs",
+    "review",
+    "status",
+    "unresolved",
+    "human_decision"
+  ],
+  "additionalProperties": false
+}

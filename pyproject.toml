@@ -1,0 +1,14 @@
+[build-system]
+requires = []
+build-backend = "wheel_backend"
+backend-path = ["scripts"]
+
+[project]
+name = "controlled-ai-agent-toolkit"
+version = "0.1.0"
+description = "Offline-first sequential writer/reviewer orchestration with bounded local tools"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+controlled-agent = "controlled_agent.cli:main"

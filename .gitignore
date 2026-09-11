@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.controlled-agent/
+.env*
+*.log
+*.jsonl
+*.sqlite*
+*.db
+*.pem
+*.key
+*.whl
+build/
+dist/
+*.egg-info/
+.venv/
+examples/*/output/

@@ -1,0 +1,120 @@
+{
+  "type": "object",
+  "properties": {
+    "task_id": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "target_root": {
+      "type": "string"
+    },
+    "base_revision": {
+      "type": "string"
+    },
+    "allowed_read_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allowed_write_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "forbidden_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "checks": {
+      "type": "object"
+    },
+    "network_policy": {
+      "type": "string",
+      "enum": [
+        "disabled",
+        "api.openai.com"
+      ]
+    },
+    "implementer_route": {
+      "type": "string"
+    },
+    "reviewer_route": {
+      "type": "string"
+    },
+    "critical_triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "budget": {
+      "type": "object",
+      "properties": {
+        "input_tokens": {
+          "type": "integer"
+        },
+        "output_tokens": {
+          "type": "integer"
+        },
+        "model_calls": {
+          "type": "integer"
+        },
+        "tool_calls": {
+          "type": "integer"
+        },
+        "repair_cycles": {
+          "type": "integer"
+        },
+        "wall_seconds": {
+          "type": "integer"
+        },
+        "per_call_output_tokens": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "input_tokens",
+        "output_tokens",
+        "model_calls",
+        "tool_calls",
+        "repair_cycles",
+        "wall_seconds",
+        "per_call_output_tokens"
+      ],
+      "additionalProperties": false
+    },
+    "human_approval": {
+      "type": "string",
+      "enum": [
+        "named_owner_required"
+      ]
+    }
+  },
+  "required": [
+    "task_id",
+    "owner",
+    "objective",
+    "target_root",
+    "base_revision",
+    "allowed_read_paths",
+    "allowed_write_paths",
+    "forbidden_paths",
+    "checks",
+    "network_policy",
+    "implementer_route",
+    "reviewer_route",
+    "critical_triggers",
+    "budget",
+    "human_approval"
+  ],
+  "additionalProperties": false
+}

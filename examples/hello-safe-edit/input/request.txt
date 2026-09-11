@@ -1,0 +1,1 @@
+Write the greeting specified by the task contract. This is synthetic data.

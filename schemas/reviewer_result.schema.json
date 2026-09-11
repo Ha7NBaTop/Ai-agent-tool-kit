@@ -1,0 +1,66 @@
+{
+  "type": "object",
+  "properties": {
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "NO_FINDINGS",
+        "FINDINGS",
+        "BLOCKED"
+      ]
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "severity": {
+            "type": "string",
+            "enum": [
+              "P0",
+              "P1",
+              "P2",
+              "P3"
+            ]
+          },
+          "file": {
+            "type": "string"
+          },
+          "locator": {
+            "type": "string"
+          },
+          "invariant": {
+            "type": "string"
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "reproducer": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "severity",
+          "file",
+          "locator",
+          "invariant",
+          "explanation",
+          "reproducer"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "verdict",
+    "findings",
+    "unresolved"
+  ],
+  "additionalProperties": false
+}

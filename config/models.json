@@ -1,0 +1,1 @@
+{"version":"1.0.0","worker_hard_case":{"provider":"openai","model":"gpt-5.6-sol","reasoning_effort":"high","write_access":true,"fallback":null},"critical_reviewer":{"provider":"openai","model":"gpt-6-astra","reasoning_effort":"high","write_access":false,"fallback":null},"fake":{"provider":"fake","writer":"fake-writer-v1","reviewer":"fake-reviewer-v1"}}

@@ -16,6 +16,10 @@
       "bytes": 618,
       "sha256": "5e997b75a563475e9737d4eca238439f038c3cdc3ddd193a2b8ea8bb0ad47e61"
     },
+    "AI_TOOL_KIT_TOUCH_BUILD_PROMPT_RU.md": {
+      "bytes": 24532,
+      "sha256": "3889790fdc6e311090e54450e0bf5bfa919691849088abae48efad6f98afb315"
+    },
     "CHANGELOG.md": {
       "bytes": 490,
       "sha256": "d4dc624fdc189be8640f59498de056168b1cd890993f7d8c293ecba93af125af"
@@ -33,8 +37,8 @@
       "sha256": "4f9f18f9e26a754e85135a4dc63c215e241f8ddb56941f54cb63adb75226c3e8"
     },
     "README_RU.md": {
-      "bytes": 2419,
-      "sha256": "61c9e8f26767a49fe891cda03ee58b1613a5da32c56f372f7c666da734d4c60a"
+      "bytes": 2638,
+      "sha256": "7a9aad83d88a78e5395928d4aa9ffa5c5f6056647d503fb78a173222981973b1"
     },
     "SECURITY.md": {
       "bytes": 2015,

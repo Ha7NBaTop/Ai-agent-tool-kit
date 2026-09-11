@@ -29,5 +29,8 @@ Demo работает без ключа и сети, во временной п�
 [архитектура](docs/ARCHITECTURE.md), [модель угроз](docs/THREAT_MODEL.md),
 [публикация](docs/RELEASE_CHECKLIST_RU.md), [отчёт](docs/BUILD_REPORT.md).
 
+Готовое техническое задание на визуальную оболочку находится в
+`AI_TOOL_KIT_TOUCH_BUILD_PROMPT_RU.md` и развивается в ветке `ai-tool-kit-touch`.
+
 Проект распространяется по лицензии MIT; полный текст находится в LICENSE.
 Standalone toolkit размещён в GitHub; package/release и human acceptance не выполнялись.
